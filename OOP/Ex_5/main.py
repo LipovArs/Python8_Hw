@@ -29,11 +29,10 @@ class Candidate:
                     candidate = cls(first_name, last_name, email, tech_stack, main_skill, main_skill_grade)
                     candidates.append(candidate)
 
-        # Вивести кандидатів на екран
         for candidate in candidates:
             print(candidate)
 
         return candidates
 
-# Виклик методу для зчитування та виведення кандидатів з файлу
+
 Candidate.generate_candidates('candidates.csv')
